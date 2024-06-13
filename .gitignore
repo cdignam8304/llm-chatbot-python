@@ -1,4 +1,5 @@
 __pycache__
 .streamlit/secrets.toml
+.streamlit/credentials.toml
 .env
 .DS_Store
