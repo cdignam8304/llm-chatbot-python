@@ -21,7 +21,11 @@ if "messages" not in st.session_state:
 def handle_submit(message):
     # Handle the response
     with st.spinner('Thinking...'):
+        print("The message is a %s." % type(message))  # for debug
+        print("Here is the message: %s" % message)
         response = generate_response(message)
+        print("The response is a %s." % type(response))  # for debug
+        print("Here is the response: %s" % response)
         write_message('assistant', response)
 # end::submit[]
 
